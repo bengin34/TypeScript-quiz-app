@@ -45,6 +45,7 @@ function App() {
   };
 
   const nextQuestion = () => {};
+  console.log(questions)
   return (
     <div className="App">
       <h1>REACT QUIZ</h1>
@@ -60,7 +61,7 @@ function App() {
           questionNr={number + 1}
           totalQuestions={TOTAL_QUESTIONS}
           question={questions[number]?.question}
-          answers={questions[number]?.answers}
+          answers={questions[number]?.answer}
           userAnswer={userAnswers ? userAnswers[number] : undefined}
           callback={checkAnswer}
         />
